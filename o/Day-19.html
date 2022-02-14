@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="assests/js/app.js"></script> -->
+    <title>Document</title>
+</head>
+<body>
+    <div class="temp"></div>
+</body>
+<script>
+    const button = document.querySelector('button')
+
+const bmw = (e) => {
+    const ele = e.target
+    ele.style = "background:red"
+}
+
+button.addEventListener('click', bmw)
+
+button.addEventListener('dblclick', e => {
+    e.target.style = "background:orange"
+})
+
+button.addEventListener('mouseover', e => {
+    e.target.style = "background:pink"
+
+})
+</script>
+</html>
